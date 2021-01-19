@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Зоя Голуб](https://up.htmlacademy.ru/htmlcss/30/user/1318315).
-* Наставник: `Неизвестно`.
+* Наставник: [Анна Рус](https://htmlacademy.ru/profile/vanillawulf).
 
 ---
 
