@@ -39,8 +39,8 @@
     <main>
       <section class="proposal">
         <h1>Наши предложения</h1>
-        <p>Долго, дорого, скрупулезно.</p>
-        <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+        <p class="proposal-credo">Долго, дорого, скрупулезно.</p>
+        <p>Математически выверенproposal-credoный дизайн для вашего сайта или мобильного приложения.</p>
         <a class="button" href="#">Узнать больше</a>
         <img src="img/phone_slide.png" width="760" height="431" alt="слайдер приложений для телефонов">
       </section>
@@ -48,19 +48,19 @@
         <h2>Продукты</h2>
         <ul class="products-list">
           <li class="products-item">
-            <h3>Веб-сайты</h3>
+            <h3 class="products-item-name">Веб-сайты</h3>
             <img src="img/web_site.jpg" width="300" height="146" alt="Веб-сайты">
             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
             <a class="button" href="#">Заказать</a>
           </li>
           <li class="products-item">
-            <h3>Приложения</h3>
+            <h3 class="products-item-name">Приложения</h3>
             <img src="img/appications.jpg" width="300" height="146" alt="Приложжения">
             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
             <a class="button" href="#">Заказать</a>
           </li>
           <li class="products-item">
-            <h3>Презентации</h3>
+            <h3 class="products-item-name">Презентации</h3>
             <img src="img/presentations.jpg" width="300" height="146" alt="Презентации">
             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
             <a class="button" href="#">Заказать</a>
@@ -69,9 +69,9 @@
       </section>
       <section class="about">
         <h2>О нас</h2>
-        <p>Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+        <p class="about-us">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-        <p>Выполняем заказы на разработку:</p>
+        <p class="about-us-do">Выполняем заказы на разработку:</p>
         <ul class="product-list">
           <li class="products-item">
             <p>Веб-сайтов любой сложности</p>
@@ -86,13 +86,13 @@
         <a class="about" href="#">
           <img src="img/nerds_illustration.png" width="360" height="208" alt="Логотип">
         </a>
-        <p>с 2004 года Любим точность во всем:</p>
+        <p class="about-us-work">с 2004 года Любим точность во всем:</p>
         <dl class="about-table">
-          <dt>146%</dt>
+          <dt class="about-table-efficiency">146%</dt>
           <dd>Уровень самоотдачи</dd>
-          <dt>100%</dt>
+          <dt class="about-table-efficiency">100%</dt>
           <dd>Соблюдение сроков</dd>
-          <dt>50%</dt>
+          <dt class="about-table-efficiency">50%</dt>
           <dd>Минимальная предоплата</dd>
         </dl>
       </section>
@@ -120,6 +120,25 @@
             </a>
           </li>
         </ul>
+      </section>
+      <section class="modal">
+        <h3 class="modal-letter">Напишите нам</h3>
+        <form class="modal-info" action="#" method="post">
+          <p>
+            <label for="modal-info-name">Ваше имя:</label>
+            <input class="modal-info-text" id="modal-info-name" type="text" name="name" placeholder="Имя Фамилия">
+          </p>
+          <p>
+            <label for="modal-info-name">Ваш email:</label>
+            <input class="modal-info-text" id="modal-info-email" type="email" name="email" placeholder="email@example.com">
+          </p>
+          <p>
+            <label for="modal-info-name">Текст письма:</label>
+            <input class="modal-info-text" id="modal-info-text" type="text" name="text" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </main>
     <footer>
@@ -161,24 +180,5 @@
         <a class="footer-discount" href="#">Скидка 10% для друзей из социальных сетей.</a>
       </section>
     </footer>
-    <section class="modal">
-      <h3>Напишите нам</h3>
-      <form class="modal-info" action="#" method="post">
-        <p>
-          <label for="modal-info-name">Ваше имя:</label>
-          <input class="modal-info-name" id="modal-info-name" type="text" name="name" placeholder="Имя Фамилия">
-        </p>
-        <p>
-          <label for="modal-info-email">Ваш email:</label>
-          <input class="modal-info-email" id="modal-info-email" type="email" name="email" placeholder="email@example.com">
-        </p>
-        <p>
-          <label for="modal-info-text">Текст письма:</label>
-          <input class="modal-info-text" id="modal-info-text" type="text" name="text" placeholder="В свободной форме">
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="modal-close" type="button">Закрыть</button>
-    </section>
   </body>
 </html>
