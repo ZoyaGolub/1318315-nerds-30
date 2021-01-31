@@ -1,0 +1,156 @@
+/*variables*/
+:root {
+    --basic-black: #000000;
+    --basic-white: #FFFFFF;
+    --blackgreen: #283136;
+    --darkgrey: #A6A6A6;
+    --redpink: #FB565A;
+    --blackgrey: #666666;
+    --blackdarkgrey: #444444;
+    --grey: #E1E1E1;
+    --lightgrey: #EEEEEE;
+    --blacklight: #4D4D4D;
+    --red: #E74246;
+    --reddark: #D7373B;
+    --greenlight: #00CA74;
+    --green: #00BC6C;
+    --greendark: #00AA62;
+    --orangelight: #EFC84A;
+    --ogange: #EAB534;
+    --orangedark: #E5A722;
+    --greymidle: #E1E1E1;
+    --lightgreyblue: #D7DCDE;
+    --darkgreyblue: #B4B8BB;
+    --lightgreybrown: #DFDFDF;
+    --darkgreybrown: #D5D5D5;
+    --midlegreybrown: #DBDBDB;
+}
+
+/*global*/
+body {
+  min-width: 1440px;
+  margin: 75px;
+  padding: 140px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--blackgreen);
+  background-color: var(--basic-white);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    font color: var(--basic-white);
+    background color: transparent;
+    text transform: uppercase;
+}
+
+/*header-navigation*/
+.header-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+    background color: var(--lightgrey);
+    text-transform: uppercase;
+}
+
+/*site-navigation-basket*/
+.site-navigation-basket {
+    font position: top right;
+    background color: var(--lightgrey);
+}
+
+/*proposal-credo*/
+.proposal-credo {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    background color: var(--lightgrey);
+}
+
+/*products*/
+.products-item-name {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text transform: uppercase;
+    font color: var(--basic-black);
+}
+
+/*about*/
+.about-us {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+    font color: var(--basic-black);
+}
+.about-us-do {
+    font-weight: 700;
+    text transform: uppercase;
+}
+.about-us-work {
+    font-weight: 700;
+    font color: var(--basic-black);
+    text transform: uppercase;
+}
+.about-table-efficiency {
+    font-size: 45px;
+    line-height: 64px;
+    font-weight: 700;
+    font color: var(--basic-black);
+}
+
+/*footer-contacts*/
+.footer-contacts-name {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font color: var(--basic-black);
+    text transform: uppercase;
+}
+.footer-contacts-info {
+    font-size: 16px;
+    line-height: 18px;
+    font color: var(--blackgrey);
+}
+.footer-post {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    font color: var(--basic-black);
+}
+.footer-discount {
+    font-size: 16px;
+    line-height: 22px;
+    font color: var(--blackdarkgrey);
+}
+
+.modal-letter {
+    font-size: 45px;
+    line-height: 53px;
+    font-weight: 700;
+    font color: var(--basic-black);
+}
+.modal-info-name {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    font color: var(--basic-black);
+}
+.modal-info-text {
+    font-size: 16px;
+    line-height: 18px;
+    font color: var(--blackdarkgrey);
+}
