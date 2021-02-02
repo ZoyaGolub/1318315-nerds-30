@@ -10,6 +10,7 @@
     --grey: #E1E1E1;
     --lightgrey: #EEEEEE;
     --blacklight: #4D4D4D;
+    --blackbrown: #231F20;
     --red: #E74246;
     --reddark: #D7373B;
     --greenlight: #00CA74;
@@ -53,7 +54,7 @@ button {
     line-height: 30px;
     font-weight: 500;
     font color: var(--basic-white);
-    background color: transparent;
+    background-color: transparent;
     text transform: uppercase;
 }
 
@@ -62,14 +63,14 @@ button {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    background color: var(--lightgrey);
+    background-color: var(--lightgrey);
     text-transform: uppercase;
 }
 
 /*site-navigation-basket*/
 .site-navigation-basket {
     font position: top right;
-    background color: var(--lightgrey);
+    background-color: var(--lightgrey);
 }
 
 /*proposal-credo*/
@@ -77,7 +78,7 @@ button {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    background color: var(--lightgrey);
+    background-color: var(--lightgrey);
 }
 
 /*products*/
@@ -85,7 +86,7 @@ button {
     font-size: 24px;
     line-height: 30px;
     font-weight: 700;
-    text transform: uppercase;
+    text-transform: uppercase;
     font color: var(--basic-black);
 }
 
@@ -98,7 +99,7 @@ button {
 }
 .about-us-do {
     font-weight: 700;
-    text transform: uppercase;
+    text-transform: uppercase;
 }
 .about-us-work {
     font-weight: 700;
@@ -154,3 +155,73 @@ button {
     line-height: 18px;
     font color: var(--blackdarkgrey);
 }
+
+/*header-pagename*/
+.header-pagename {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+    font color: var(--basic-black);
+    text-align: center;
+    background color: var(--lightgrey);
+  }
+  
+  /*proposal*/
+  .filter-type {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+    font color: var(--basic-black);
+    text transform: uppercase;
+  }
+  .filter-type-price {
+    font-size: 16px;
+    line-height: 22px;
+    text transform: uppercase;
+    background: var(--lightgrey);
+  }
+  .filter-type {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  .button-filter {
+    font-size: 16px;
+    line-height: 18px;
+    font color: var(--basic-black);
+    background-color: lightgrey;
+  }
+  .filter-products-sort {
+    font-size: 14px;
+    line-height: 18px;
+    font color: var(--basic-black);
+    text transform: uppercase;
+  }
+  .button-big {
+    color: var(--blackbrown)
+  }
+  .button-small {
+    color: var(--darkgrey)
+  }
+  
+  /*products*/
+  .products-item-name {
+    font-size: 18px;
+    line-height: 30px;
+    font color: var(--basic-black);
+    text transform: uppercase;
+  }
+  .products-item-info {
+    font-size: 16px;
+    line-height: 18px;
+    font color: var(--blackgrey);
+    text-align: center;
+    background: var(--blacklight);
+  }
+  .producks-pages-list {
+    font-size: 16px;
+    line-height: 18px;
+    font color: var(--basic-black);
+    text transform: uppercase;
+    text-align: center;
+    background: var(--lightgrey);
+  }
