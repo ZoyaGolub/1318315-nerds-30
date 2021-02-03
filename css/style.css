@@ -1,3 +1,29 @@
+/*font*/
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+       url("../fonts/roboto.woff2") format(woff2),
+       url(../fonts/roboto.woff) format(woff);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+       url("../fonts/robotomedium.woff2") format(woff2),
+       url(../fonts/robotomedium.woff) format(woff);
+  font-weight: 500;
+  font-style: medium;
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"),
+       url("../fonts/robotobold.woff2") format(woff2),
+       url(../fonts/robotobold.woff) format(woff);
+  font-weight: 700;
+  font-style: bold;
+}
+
 /*variables*/
 :root {
     --basic-black: #000000;
@@ -53,9 +79,9 @@ button {
     font-size: 16px;
     line-height: 30px;
     font-weight: 500;
-    font color: var(--basic-white);
+    color: var(--basic-white);
     background-color: transparent;
-    text transform: uppercase;
+    text-transform: uppercase;
 }
 
 /*header-navigation*/
@@ -87,7 +113,7 @@ button {
     line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
-    font color: var(--basic-black);
+    color: var(--basic-black);
 }
 
 /*about*/
@@ -95,7 +121,7 @@ button {
     font-size: 45px;
     line-height: 45px;
     font-weight: 500;
-    font color: var(--basic-black);
+    color: var(--basic-black);
 }
 .about-us-do {
     font-weight: 700;
@@ -103,14 +129,14 @@ button {
 }
 .about-us-work {
     font-weight: 700;
-    font color: var(--basic-black);
-    text transform: uppercase;
+    color: var(--basic-black);
+    text-transform: uppercase;
 }
 .about-table-efficiency {
     font-size: 45px;
     line-height: 64px;
     font-weight: 700;
-    font color: var(--basic-black);
+    color: var(--basic-black);
 }
 
 /*footer-contacts*/
@@ -118,42 +144,42 @@ button {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    font color: var(--basic-black);
-    text transform: uppercase;
+    color: var(--basic-black);
+    text-transform: uppercase;
 }
 .footer-contacts-info {
     font-size: 16px;
     line-height: 18px;
-    font color: var(--blackgrey);
+    color: var(--blackgrey);
 }
 .footer-post {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
-    font color: var(--basic-black);
+    color: var(--basic-black);
 }
 .footer-discount {
     font-size: 16px;
     line-height: 22px;
-    font color: var(--blackdarkgrey);
+    color: var(--blackdarkgrey);
 }
 
 .modal-letter {
     font-size: 45px;
     line-height: 53px;
     font-weight: 700;
-    font color: var(--basic-black);
+    color: var(--basic-black);
 }
 .modal-info-name {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
-    font color: var(--basic-black);
+    color: var(--basic-black);
 }
 .modal-info-text {
     font-size: 16px;
     line-height: 18px;
-    font color: var(--blackdarkgrey);
+    color: var(--blackdarkgrey);
 }
 
 /*header-pagename*/
@@ -161,9 +187,9 @@ button {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
-    font color: var(--basic-black);
+    color: var(--basic-black);
     text-align: center;
-    background color: var(--lightgrey);
+    background-color: var(--lightgrey);
   }
   
   /*proposal*/
@@ -171,14 +197,14 @@ button {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
-    font color: var(--basic-black);
-    text transform: uppercase;
+    color: var(--basic-black);
+    text-transform: uppercase;
   }
   .filter-type-price {
     font-size: 16px;
     line-height: 22px;
-    text transform: uppercase;
-    background: var(--lightgrey);
+    text-transform: uppercase;
+    background-color: var(--lightgrey);
   }
   .filter-type {
     font-size: 16px;
@@ -187,14 +213,14 @@ button {
   .button-filter {
     font-size: 16px;
     line-height: 18px;
-    font color: var(--basic-black);
+    color: var(--basic-black);
     background-color: lightgrey;
   }
   .filter-products-sort {
     font-size: 14px;
     line-height: 18px;
-    font color: var(--basic-black);
-    text transform: uppercase;
+    color: var(--basic-black);
+    text-transform: uppercase;
   }
   .button-big {
     color: var(--blackbrown)
@@ -207,21 +233,21 @@ button {
   .products-item-name {
     font-size: 18px;
     line-height: 30px;
-    font color: var(--basic-black);
-    text transform: uppercase;
+    color: var(--basic-black);
+    text-transform: uppercase;
   }
   .products-item-info {
     font-size: 16px;
     line-height: 18px;
-    font color: var(--blackgrey);
+    color: var(--blackgrey);
     text-align: center;
-    background: var(--blacklight);
+    background-color: var(--blacklight);
   }
   .producks-pages-list {
     font-size: 16px;
     line-height: 18px;
-    font color: var(--basic-black);
-    text transform: uppercase;
+    color: var(--basic-black);
+    text-transform: uppercase;
     text-align: center;
-    background: var(--lightgrey);
+    background-color: var(--lightgrey);
   }
