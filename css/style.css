@@ -7,6 +7,7 @@
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
@@ -15,6 +16,7 @@
   font-weight: 500;
   font-style: medium;
 }
+
 @font-face {
   font-family: "Roboto";
   src: local("Roboto"),
@@ -123,15 +125,18 @@ button {
     font-weight: 500;
     color: var(--basic-black);
 }
+
 .about-us-do {
     font-weight: 700;
     text-transform: uppercase;
 }
+
 .about-us-work {
     font-weight: 700;
     color: var(--basic-black);
     text-transform: uppercase;
 }
+
 .about-table-efficiency {
     font-size: 45px;
     line-height: 64px;
@@ -147,17 +152,20 @@ button {
     color: var(--basic-black);
     text-transform: uppercase;
 }
+
 .footer-contacts-info {
     font-size: 16px;
     line-height: 18px;
     color: var(--blackgrey);
 }
+
 .footer-post {
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
     color: var(--basic-black);
 }
+
 .footer-discount {
     font-size: 16px;
     line-height: 22px;
@@ -170,12 +178,14 @@ button {
     font-weight: 700;
     color: var(--basic-black);
 }
+
 .modal-info-name {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
     color: var(--basic-black);
 }
+
 .modal-info-text {
     font-size: 16px;
     line-height: 18px;
@@ -200,21 +210,24 @@ button {
     color: var(--basic-black);
     text-transform: uppercase;
   }
+
   .filter-type-price {
     font-size: 16px;
     line-height: 22px;
     text-transform: uppercase;
     background-color: var(--lightgrey);
   }
+
   .filter-type {
     font-size: 16px;
     line-height: 19px;
   }
+
   .button-filter {
     font-size: 16px;
     line-height: 18px;
     color: var(--basic-black);
-    background-color: lightgrey;
+    background-color: var(--lightgrey);
   }
   .filter-products-sort {
     font-size: 14px;
@@ -222,9 +235,11 @@ button {
     color: var(--basic-black);
     text-transform: uppercase;
   }
+
   .button-big {
     color: var(--blackbrown)
   }
+
   .button-small {
     color: var(--darkgrey)
   }
@@ -236,6 +251,7 @@ button {
     color: var(--basic-black);
     text-transform: uppercase;
   }
+
   .products-item-info {
     font-size: 16px;
     line-height: 18px;
@@ -243,6 +259,7 @@ button {
     text-align: center;
     background-color: var(--blacklight);
   }
+  
   .producks-pages-list {
     font-size: 16px;
     line-height: 18px;
