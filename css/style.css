@@ -336,9 +336,18 @@ button {
   grid-row: -1 / -2;
 }
 
+/*Page-catalog*/
+
+.page-catalog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
 /*Header-pagename*/
 
 .header-pagename {
+  grid-row: 1 /2;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -348,6 +357,31 @@ button {
 }
   
   /*Proposal*/
+
+.filter-type-cost {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.filter-type-price,
+.filter-type-grid,
+.filter-type-design,
+.filter-button {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+}
+
+.filter-type-sort {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.filter-products-sort,
+.button-big,
+.button-small {
+  grid-row: 2 / 3;
+  grid-column: -1 / -2;
+}
 
 .filter-type {
   font-size: 18px;
@@ -364,12 +398,7 @@ button {
   background-color: var(--lightgrey);
 }
 
-.filter-type {
-  font-size: 16px;
-  line-height: 19px;
-}
-
-.button-filter {
+.filter-button {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
@@ -392,6 +421,15 @@ button {
 }
   
 /*Products*/
+
+.products-item {
+  grid-area: 3 / 2 / -2 / -1;
+}
+
+.producks-pages-item {
+  grid-row: -1 / -2;
+  grid-column: 2 / -1;
+}
 
 .products-item-name {
   font-size: 18px;

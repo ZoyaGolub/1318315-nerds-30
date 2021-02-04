@@ -29,20 +29,20 @@
           <img scr="img/basket.png" width="15" height="15" alt="Корзина">
         <a class="site-navigation-basket" href="#">Корзина</a>
       </nav>
-      <p class="header-pagename">Магазин готовых шаблонов</p>
     </header>
-    <main>
+    <main class="page-catalog">
+      <p class="header-pagename">Магазин готовых шаблонов</p>
       <section class="proposal">
         <h1>Наши предложения</h1>
         <h2>Фильтр товаров</h2>
           <form class="filter" method="get" action="#">
             <fieldset>
-              <legend class="filter-type">Стоимость:</legend>
+              <legend class="filter-type-cost">Стоимость:</legend>
                 <label class="filter-type-price">от<input type="text" value="0"></label>
                 <label class="filter-type-price">до<input type="text" value="15000"></label>
             </fieldset>
             <fieldset>
-              <legend class="filter-type">Сетка:</legend>
+              <legend class="filter-type filter-type-grid">Сетка:</legend>
               <ul>
                 <li class="filter-type-grid">
                   <input type="radio" name="grid" value="layout" id="filter-adaptive" checked>
@@ -59,7 +59,7 @@
               </ul>
             </fieldset>
             <fieldset>
-              <legend class="filter-type">Особенности:</legend>
+              <legend class="filter-type filter-type-design">Особенности:</legend>
                 <ul>
                   <li class="filter-type-design">
                     <input type="checkbox" name="design" id="filter-slider" checked>
@@ -83,13 +83,13 @@
                   </li>
                 </ul>
             </fieldset>
-            <button class="button-filter" type="sublimit">Показать</button>
+            <button class="button filter-button" type="sublimit">Показать</button>
           </form>
         </section>
         <section>
           <h2>Список продуктов</h2>
           <form class="filter-products-sort" method="get" action="#">
-            <p class="filter-type">Сортировать:</p>
+            <p class="filter-type filter-type-sort">Сортировать:</p>
             <ul class="filter-products-sort">
               <li class="filter-products-sort-price">
                 <p>По цене</p>
@@ -120,7 +120,7 @@
                 <h3 class="products-item-name">Sedona</h3>
                 <p class="products-item-info">Информационный сайт для туристов</p>
               </a>
-              <button class="button" type="button">9 900 ₽</button>
+              <button class="button products-item-button" type="button">9 900 ₽</button>
             </li>
             <li class="products-item">
               <a href="#">
