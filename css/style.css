@@ -449,7 +449,13 @@ button {
   background-color: var(--blacklight);
 }
 
+/*Flex*/
+
 .producks-pages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-right: 11px;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
