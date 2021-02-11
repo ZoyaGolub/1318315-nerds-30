@@ -100,10 +100,11 @@ button {
 }
 
 /*Header-navigation*/
+/*Flex*/
 
 .header-navigation {
-  display: grid;
-  grid-template-columns: min-content 1fr min-content;
+  display: flex;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 30px;
   font-weight: 500;
@@ -111,11 +112,11 @@ button {
   text-transform: uppercase;
 }
 
-/*Site-navigation-basket*/
+/*Header-navigation-logo*/
 
-.site-navigation-basket {
-  font position: top right;
-  background-color: var(--lightgrey);
+.header-navigation-logo {
+  width: 160px;
+  height: 65px;
 }
 
 /*Proposal*/
@@ -213,11 +214,13 @@ button {
   grid-row: -1 / -2;
 }
 
-/*Partners-item*/
+/*Partners-list*/
 
-.partners-item {
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
+.partners-list {
+  display: flex;
+  justify-content: space-around;
+  width: 210px;
+  height: 90px;
 }
 
 /*Footer*/
