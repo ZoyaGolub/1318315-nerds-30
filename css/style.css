@@ -55,6 +55,7 @@
   --lightgreybrown: #DFDFDF;
   --darkgreybrown: #D5D5D5;
   --midlegreybrown: #DBDBDB;
+  --greygrey: #C1C1C1;
 }
 
 /*Global*/
@@ -91,6 +92,7 @@ button {
   color: var(--basic-white);
   background-color: transparent;
   text-transform: uppercase;
+  border-radius: 3px;
 }
 
 /*Grid*/
@@ -124,6 +126,8 @@ button {
 .proposal {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
+  min-height: 431px;
+  background-color: var(--lightgrey);
 }
 
 /*Proposal-credo*/
@@ -133,14 +137,62 @@ button {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  background-color: var(--lightgrey);
 }
 
 /*Proposal-foto*/
 
 .proposal-foto {
   grid-column: 2 / -1;
+  min-width: 760px;
+  min-height: 431px;
 }
+
+/*Slide*/
+
+.slide {
+  display: none;
+}
+
+.slide-current {
+  display: block;
+}
+
+/*Slider-button*/
+
+.slider-button {
+  position: absolute;
+  top: 676px;
+  left: 431px;
+  z-index: 5;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+/*Slider-button button*/
+.slider-button button {
+  padding: 0px;
+  width: 18px;
+  height: 18px;
+  background-color: var(--basic-white);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-button .current {
+  padding: 0px
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 2px;
+  border-radius: 50%
+  color: var(--greygrey);
+  position: absolute;
+  top: 436px;
+  left: 681px;
+}
+
+
 
 /*Products*/
 
