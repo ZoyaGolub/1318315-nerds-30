@@ -56,6 +56,8 @@
   --darkgreybrown: #D5D5D5;
   --midlegreybrown: #DBDBDB;
   --greygrey: #C1C1C1;
+  --lightgreygreenblue: #D7DCDF;
+  --darkgreyred: #ABABAB;
 }
 
 /*Global*/
@@ -163,7 +165,7 @@ button {
   position: absolute;
   top: 676px;
   left: 431px;
-  z-index: 5;
+  z-index: 1;
   display: flex;
   width: 88px;
   justify-content: space-between;
@@ -191,8 +193,6 @@ button {
   top: 436px;
   left: 681px;
 }
-
-
 
 /*Products*/
 
@@ -416,6 +416,7 @@ button {
 .filter-type-cost {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
+  margin-bottom: 142px;
 }
 
 .filter-type-price,
@@ -444,13 +445,18 @@ button {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
- 
+}
 
 .filter-type-price {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
   background-color: var(--lightgrey);
+  display: flex;
+  width: 260px;
+  height: 38px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .filter-button {
@@ -474,7 +480,63 @@ button {
 .button-small {
   color: var(--darkgrey)
 }
-  
+
+/*Range-cost*/
+
+.range-cost {
+  width: 260px;
+  height: 80px;
+  border-radius: 3px;
+  background-color: var(--lightgrey);
+  position: relative;
+  left: 140px;
+  top: 488px;
+  margin-bottom: 14px;
+  padding-top: 39px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.range-cost .csale {
+  width: 216px;
+  height: 2px;
+  background-color: var(--lightgreygreenblue);
+  position: absolute;
+  left: 173px;
+  top: 527px;
+}
+
+.range-cost .bar {
+  width: 70%;
+  height: 2px;
+  background-color: var(--greenlight);
+  position: absolute;
+  left: 173px;
+  top: 527px;
+}
+
+.range-cost .toggle {
+  width: 4px;
+  height: 4px;
+  padding: 0px;
+  background-color: var(--darkgreyred);
+  border: 8px var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
+  position: absolute;
+  top: 30px;
+  left: 0px;
+  cursor: pointer;
+}
+
+.range-cost .toggle-min {
+  left: 18px;
+}
+
+.range-cost .toggle-max {
+  left: 160px;
+}
+
 /*Products*/
 
 .products-item {
