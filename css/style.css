@@ -63,8 +63,8 @@
 /*Global*/
 
 body {
-  min-width: 1440px;
-  margin: 75px;
+  width: 1440px;
+  margin: 0 auto;
   padding: 140px;
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
@@ -73,7 +73,6 @@ body {
   color: var(--blackgreen);
   background-color: var(--basic-white);
 
-  min-width: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
 }
@@ -103,6 +102,15 @@ button {
   height: 100%;
 }
 
+/*Visually-hidden*/
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 /*Header-navigation*/
 /*Flex*/
 
@@ -129,14 +137,17 @@ button {
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  margin: 45px;
+}
+
+.site-navigation-item {
+  margin-left: 45px;
 }
 
 /*Proposal*/
 
 .proposal {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  /*display: grid;
+  grid-template-rows: 1fr 1fr 1fr;*/
   min-height: 431px;
   background-color: var(--lightgrey);
 }
