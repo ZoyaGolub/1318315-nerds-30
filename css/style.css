@@ -227,7 +227,7 @@ button {
 
 /*Products-group*/
 
-.products-group {
+.products-group-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -247,13 +247,11 @@ button {
 /*About*/
 
 .about {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: min-content 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
 }
 
 .about-us {
-  grid-area: 1 / 1 / 3 / 2;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
@@ -261,32 +259,33 @@ button {
 }
 
 .about-us-do {
-  grid-area: 1 / 2 / 3 / 2;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.product-list {
-  grid-area: 1 / 3 / 3 / 4;
-}
-
-.about-logo {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
 .about-us-work {
-  grid-area: 3 / 2 / 4 / 3;
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
 }
 
+/*Statistic*/
+
+.statistic {
+  display: flex;
+  flex-direction: column;
+  min-width: min-content;
+  /*align-items: flex-start;*/
+}
+
 /*About-table*/
 
 .about-table {
+  margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  column-gap: 20px;
 }
 
 .about-table-efficiency {
@@ -299,6 +298,7 @@ button {
 
 .about-table-text {
   grid-row: -1 / -2;
+  margin: 0px;
 }
 
 /*Partners-list*/
