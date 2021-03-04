@@ -313,31 +313,34 @@ button {
 
 /*Footer*/
 
-.footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr 1fr;
+.footer-contacts {
+  background-image: url(../img/map.jpg);
+  width: 1440px;
+  height: 416px;
+  display: flex;
 }
 
-/*Footer-contacts-map*/
+/*Footer-contacts*/
 
-.footer-contacts-map {
-  grid-row: 1 / -1;
-  margin: 0;
-  padding: 0;
+.footer-map {
+  width: 220px;
+  height: 200px;
+  background-color: var(--basic-white);
+  margin-top: 58px;
+  margin-left: 140px;
+  padding: 50px;
 }
 
-/*Footer-contacts-marker*/
+/*Footer-contacts-map-marker*/
 
-.footer-contacts-marker {
-  grid-area: 2 / 1 / -1 / 2;
-  justify-self: center;
+.footer-contacts-map-marker {
+  margin-top: 85px;
+  margin-left: 360px;
 }
 
 /*Footer-contacts*/
 
 .footer-contacts-name {
-  grid-area: 1 / 1 / 2 / 2;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -346,24 +349,22 @@ button {
 }
 
 .footer-contacts-info {
-  grid-area: 1 / 1 / 2 / 2;
   font-size: 16px;
   line-height: 18px;
   color: var(--blackgrey);
 }
 
 .footer-contacts-button {
-  grid-area: 1 / 1 / 2 / 2;
+  
 }
 
 /*Footer-social*/
 
 .footer-social-item {
-  grid-area: 1 / 2 / 2 / 3;
+ 
 }
 
 .footer-post {
-  grid-area: 2 / 2 / -1 / -1;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
@@ -371,7 +372,6 @@ button {
 }
 
 .footer-discount {
-  grid-area: 2 / 2 / -1 / -1;
   font-size: 16px;
   line-height: 22px;
   color: var(--blackdarkgrey);
