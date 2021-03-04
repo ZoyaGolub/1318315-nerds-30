@@ -304,10 +304,11 @@ button {
 /*Partners-list*/
 
 .partners-list {
-  display: flex;
-  justify-content: space-around;
-  width: 210px;
-  height: 90px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  list-style-type: none;
+  justify-items: center;
+  align-items: center;
 }
 
 /*Footer*/
@@ -379,14 +380,12 @@ button {
 /*Modal*/
 
 .modal {
+  width: 860px;
+  height: 590px;
+  padding: 65px 100px 85px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: min-content min-content 1fr min-content;
-}
-
-.modal-close {
-  grid-area: -1 / 1 / -2 / 2;
-  justify-self: end;
+  grid-template-rows: min-content 1fr min-content;
 }
 
 .modal-letter {
@@ -397,16 +396,33 @@ button {
   color: var(--basic-black);
 }
 
+.modal-close {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  justify-self: end;
+}
+
+.modal-info {
+  grid-column: 1 / -1;
+  grid-row: 2 / -2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content 1fr;
+}
+
 .modal-name {
-  grid-area: 1 / 2 / 2 / 3;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
 
 .modal-email {
-  grid-area: 2 / 2 / -1 / 3;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
 }
 
 .modal-text {
-  grid-row: 3 / 4;
+  grid-column: 1 / 3;
+  grid-row: 2 / 3;
 }
 
 .modal-info-name {
