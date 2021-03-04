@@ -251,6 +251,10 @@ button {
   justify-content: space-between;
 }
 
+.about-info {
+  margin-left: 70px;
+}
+
 .about-us {
   font-size: 45px;
   line-height: 45px;
@@ -269,17 +273,23 @@ button {
   text-transform: uppercase;
 }
 
+.products-item {
+  list-style-type: none;
+  background: url(../img/line-item.jpg) no-repeat left center;
+  margin-left: -40px;
+  padding-left: 40px;
+}
+
 /*Statistic*/
 
 .statistic {
   display: flex;
   flex-direction: column;
   min-width: min-content;
-  /*align-items: flex-start;*/
+  margin-right: 70px;
 }
 
 /*About-table*/
-
 .about-table {
   margin: auto;
   display: grid;
@@ -360,8 +370,15 @@ button {
 
 /*Footer-social*/
 
-.footer-social-item {
- 
+.footer-social {
+ display: grid;
+ grid-template-columns: min-content 1fr;
+}
+
+.footer-social-list {
+  display: flex;
+  list-style-type: none;
+  margin: 68px 140px;
 }
 
 .footer-post {
