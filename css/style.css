@@ -371,14 +371,39 @@ button {
 /*Footer-social*/
 
 .footer-social {
- display: grid;
- grid-template-columns: min-content 1fr;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: start;
+ align-items: center;
+ height: min-content;
+}
+
+.footer-social-icon {
+  width: 270px;
+  align-items: center;
+  margin-left: 140px;
+  margin-right: 140px;
+  margin-top: 40px;
 }
 
 .footer-social-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   list-style-type: none;
-  margin: 68px 140px;
+  padding: 0px;
+  margin: 40px 10px;
+}
+
+.footer-social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--grey);
+
 }
 
 .footer-post {
@@ -386,6 +411,7 @@ button {
   line-height: 36px;
   font-weight: 700;
   color: var(--basic-black);
+  margin-bottom: 10px;
 }
 
 .footer-discount {
