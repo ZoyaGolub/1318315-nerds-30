@@ -154,8 +154,8 @@ button {
 /*Proposal*/
 
 .proposal {
-  height: 451px;
-  background-color: var(--lightgrey);
+  width: 260px;
+  margin-right: 141px;
   display: flex;
   flex-direction: column;
 }
@@ -222,29 +222,30 @@ button {
   align-self: center;
 }
 
-/*Slider-button button*/
+/*Slide-button*/
 
-.slider-button button {
+.slide-button {
   padding: 0px;
   width: 18px;
   height: 18px;
   background-color: var(--basic-white);
   border-radius: 50%;
   cursor: pointer;
-  /*position: relative;*/
+  position: relative;
 }
 
-.slider-button .current {
+.slide-button-current {
   padding: 0px;
   width: 8px;
   height: 8px;
   background-color: transparent;
   border: 2px;
   border-radius: 50%;
-  color: var(--greygrey);
-  /*position: absolute;
-  top: 436px;
-  left: 681px;*/
+  color: var(--greygrey); /*var(--green);*/ 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  /*order: 1;*/
 }
 
 /*Products-group*/
@@ -655,16 +656,15 @@ button {
   grid-row: 2 / 3;
   grid-column: 1 / 2;
   margin-bottom: 142px;
+  margin-top: 25px;
 }
-
 
 /*Range-cost*/
 
 .range-cost {
   width: 260px;
-  height: 80px;
+  margin-top: 49px;
   border-radius: 3px;
-  background-color: var(--lightgrey);
   position: relative;
   left: 140px;
   top: 488px;
@@ -674,22 +674,33 @@ button {
   padding-left: 22px;
 }
 
-.range-cost .csale {
+.range-controls {
+ height: 41px;
+ border-radius: 3px;
+ background-color: var(--lightgrey);
+ margin-bottom: 14px;
+ padding-top: 39px;
+ padding-right: 20px;
+ padding-left: 20px;
+ position: relative;
+}
+
+.range-controls .csale {
   width: 216px;
   height: 2px;
   background-color: var(--lightgreygreenblue);
-  position: absolute;
+  /*position: absolute;
   left: 173px;
-  top: 527px;
+  top: 527px;*/
 }
 
 .range-cost .bar {
   width: 70%;
   height: 2px;
   background-color: var(--greenlight);
-  position: absolute;
+  /*position: absolute;
   left: 173px;
-  top: 527px;
+  top: 527px;*/
 }
 
 .range-cost .toggle {
@@ -697,7 +708,7 @@ button {
   height: 4px;
   padding: 0px;
   background-color: var(--darkgreyred);
-  border: 8px var(--basic-white);
+  border: 8px solid #FFFFFF;
   border-radius: 50%;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
   position: absolute;
@@ -727,9 +738,28 @@ button {
   grid-column: 2 / 3;
 }
 
+/*Products-group*/
+
 .products-group {
   grid-row: 2 / 3;
   grid-column: 2 / 4;
+}
+
+/*Filter*/
+
+.filter {
+  border: none;
+  /*margin: 0px;
+  padding: 0px;
+  width: 260px;
+  margin-bottom: 47px;*/
+}
+
+.filter-cost {
+  list-style-type: none;
+  border: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-type {
@@ -740,26 +770,112 @@ button {
   text-transform: uppercase;
 }
 
+.filter fieldset:first-child {
+  margin-bottom: 18px;
+}
+
 .filter-type-price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.filter-type-price label {
   font-size: 16px;
   line-height: 22px;
   text-transform: uppercase;
-  background-color: var(--lightgrey);
-  display: flex;
-  width: 260px;
+  color: var(--blackgreen);
+  /*width: 260px;
   height: 38px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  margin-bottom: 53px;*/
 }
+
+.filter-type-price input {
+  font-size: inherit;
+  font-family: inherit;
+  width: 80px;
+  height: 38px;
+  margin-left: 11px;
+  text-align: center;
+  color: inherit;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--lightgrey);
+}
+
+.filter-type-item {
+  list-style-type: none;
+  margin-bottom: 18px;
+  margin-left: 5px;
+}
+
+.filter-type-item label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+/*Ffilter-input-radio*/
+
+.filter-input-radio +label::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -41px;
+  width: 25px;
+  height: 25px;
+  border: 4px solid #4D4D4D;
+  border-radius: 50%;
+}
+
+.filter-input-radio:checked +label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -31px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blacklight);
+  border-radius: 50%;
+}
+
+/*Filter-input-checkbox*/
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -41px;
+  width: 23px;
+  height: 23px;
+  border: 2px solid #4D4D4D;
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: -37px;
+  width: 21px;
+  height: 17px;
+  background-image: url(../img/check.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+/*Filter-button*/
 
 .filter-button {
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-black);
   background-color: var(--lightgrey);
+  width: 260px;
+  height: 50px;
+  margin-top: 3px;
 }
 
-/*Products-group*/
+/*Filter-products-sort*/
 
 .filter-products-sort {
   font-size: 14px;
@@ -791,7 +907,7 @@ button {
 .filter-products-sort-item {
   margin-left: 25px;
   align-items: center;
-}
+} /*Здесь повторяется background с главной страницы*/
 
 /*Filter-products-sort-button*/
 
