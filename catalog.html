@@ -38,92 +38,97 @@
       <section class="proposal">
         <h1 class="visually-hidden">Наши предложения</h1>
         <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter" method="get" action="#">
-            <fieldset>
-              <legend class="filter-type-cost">Стоимость:</legend>
-              <div class="range-cost">
-                <div class="scale">
-                  <div class="bar"></div>
-                </div>
-                <div class="toggle toggle-min"></div>
-                <div class="toggle toggle-max"></div>
+        <form class="filter" method="get" action="#">
+          <fieldset>
+            <legend class="filter-type-cost">Стоимость:</legend>
+            <div class="range-cost">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="filter-type-price">
-                <label class="filter-type-price">от<input type="text" value="0"></label>
-                <label class="filter-type-price">до<input type="text" value="15000"></label>
-              </div>
-            </fieldset>
-            <fieldset>
-              <legend class="filter-type filter-type-grid">Сетка:</legend>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="filter-type-price">
+              <label class="filter-type-price">от<input type="text" value="0"></label>
+              <label class="filter-type-price">до<input type="text" value="15000"></label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-type filter-type-grid">Сетка:</legend>
+            <ul>
+              <li class="filter-type-grid">
+                <input type="radio" name="grid" value="layout" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-type-grid">
+                <input type="radio" name="grid" value="layout" id="filter-fixed">
+                <label for="filter-fixed">Фиксированная</label>
+              </li>
+              <li class="filter-type-grid">
+                <input type="radio" name="grid" value="layout" id="filter-rubber">
+                <label for="filter-rubber">Резиновая</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend class="filter-type filter-type-design">Особенности:</legend>
               <ul>
-                <li class="filter-type-grid">
-                  <input type="radio" name="grid" value="layout" id="filter-adaptive" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
+                <li class="filter-type-design">
+                  <input type="checkbox" name="design" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
                 </li>
-                <li class="filter-type-grid">
-                  <input type="radio" name="grid" value="layout" id="filter-fixed">
-                  <label for="filter-fixed">Фиксированная</label>
+                <li class="filter-type-design">
+                  <input type="checkbox" name="design" id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
                 </li>
-                <li class="filter-type-grid">
-                  <input type="radio" name="grid" value="layout" id="filter-rubber">
-                  <label for="filter-rubber">Резиновая</label>
+                <li class="filter-type-design">
+                  <input type="checkbox" name="design" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-type-design">
+                  <input type="checkbox" name="design" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-type-design">
+                  <input type="checkbox" name="design" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
-            </fieldset>
-            <fieldset>
-              <legend class="filter-type filter-type-design">Особенности:</legend>
-                <ul>
-                  <li class="filter-type-design">
-                    <input type="checkbox" name="design" id="filter-slider" checked>
-                    <label for="filter-slider">Слайдер</label>
-                  </li>
-                  <li class="filter-type-design">
-                    <input type="checkbox" name="design" id="filter-advantages">
-                    <label for="filter-advantages">Блок преимуществ</label>
-                  </li>
-                  <li class="filter-type-design">
-                    <input type="checkbox" name="design" id="filter-news" checked>
-                    <label for="filter-news">Новости</label>
-                  </li>
-                  <li class="filter-type-design">
-                    <input type="checkbox" name="design" id="filter-gallery">
-                    <label for="filter-gallery">Галерея</label>
-                  </li>
-                  <li class="filter-type-design">
-                    <input type="checkbox" name="design" id="filter-basket">
-                    <label for="filter-basket">Корзина</label>
-                  </li>
-                </ul>
-            </fieldset>
-            <button class="button filter-button" type="sublimit">Показать</button>
-          </form>
-        </section>
-        <section>
+          </fieldset>
+          <button class="button filter-button" type="sublimit">Показать</button>
+        </form>
+      </section>
+      <section class="products-group">
+        <section class="filter-products">
           <h2 class="visually-hidden">Список продуктов</h2>
           <form class="filter-products-sort" method="get" action="#">
             <p class="filter-type filter-type-sort">Сортировать:</p>
-            <ul class="filter-products-sort">
-              <li class="filter-products-sort-price">
-                <p>По цене</p>
-              </li>
-              <li class="filter-products-sort-type">
-                <a href="#">По типу</a>
-              </li>  
-              <li class="filter-products-sort-name">
-                <a href="#">По названию</a>
-              </li>
-            </ul>
-            <button class="button-big" type="button"></button>
-            <!--<a href="#">
-              <img src="img/down.png" width="11" height="10" alt="Сортировать от большего к меньшему">
-            </a>-->
-            <button class="button-small" type="button"></button>
-            <!--<a href="#">
-              <img src="img/up.png" width="11" height="10" alt="Сортировать от меньшего к большему">
-            </a>-->
+            <section class="filter-products-sort-group">
+              <ul class="filter-products-sort-list">
+                <li class="filter-products-sort-item filter-products-sort-price">
+                  <p>По цене</p>
+                </li>
+                <li class="filter-products-sort-item filter-products-sort-type">
+                  <a href="#">По типу</a>
+                </li>  
+                <li class="filter-products-sort-item filter-products-sort-name">
+                  <a href="#">По названию</a>
+                </li>
+              </ul>
+              <section class="filter-products-sort-button">
+                <button class="button-big" type="button"></button>
+                  <!--<a href="#">
+                    <img src="img/down.png" width="11" height="10" alt="Сортировать от большего к меньшему">
+                  </a>-->
+                <button class="button-small" type="button"></button>
+                  <!--<a href="#">
+                    <img src="img/up.png" width="11" height="10" alt="Сортировать от меньшего к большему">
+                  </a>-->
+              </section>
+            </section>
           </form>
         </section>
-        <section>
+        <section class="products">
           <h2 class="products visually-hidden">Продукты</h2>
           <ul class="products-list">
             <li class="products-item">
@@ -175,6 +180,7 @@
             </li>
           </ul>
         </section>
+      </section>
     </main>
     <footer class="footer">
       <section class="footer-contacts">

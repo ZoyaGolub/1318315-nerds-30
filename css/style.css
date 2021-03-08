@@ -92,6 +92,8 @@ button {
   background-color: var(--redpink);
   text-transform: uppercase;
   border-radius: 3px;
+  cursor: pointer;
+  border: transparent;
 }
 
 .page {
@@ -125,6 +127,7 @@ button {
 .header-navigation-logo {
   width: 160px;
   height: 65px;
+  cursor: pointer;
 }
 
 /*Site-navigation*/
@@ -177,7 +180,6 @@ button {
   background-color: var(--redpink);
   width: 240px;
   height: 50px;
-  border: transparent;
   margin-top: 20px;
 }
 
@@ -228,7 +230,6 @@ button {
   height: 18px;
   background-color: var(--basic-white);
   border-radius: 50%;
-  border: transparent;
   cursor: pointer;
   /*position: relative;*/
 }
@@ -289,7 +290,6 @@ button {
 .button-group {
   width: 160px;
   height: 50px;
-  border: transparent;
 }
 
 .button-applications {
@@ -464,7 +464,6 @@ button {
 
 .footer-contacts-button {
   background-color: var(--redpink);
-  border: transparent;
   margin-top: 30px;
   width: 219px;
   height: 50px;
@@ -624,7 +623,6 @@ button {
 .modal-button {
   grid-row: -1 / -2;
   background-color: var(--redpink);
-  border: transparent;
   width: 250px;
   height: 50px;
   margin-top: 47px;
@@ -635,13 +633,14 @@ button {
 .page-catalog {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: min-content 1fr;
 }
 
 /*Header-pagename*/
 
 .header-pagename {
-  grid-row: 1 /2;
+  grid-row: 1 / 2;
+  grid-column: 1 / -1;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -658,67 +657,6 @@ button {
   margin-bottom: 142px;
 }
 
-.filter-type-price,
-.filter-type-grid,
-.filter-type-design,
-.filter-button {
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
-}
-
-.filter-type-sort {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
-}
-
-.filter-products-sort,
-.button-big,
-.button-small {
-  grid-row: 2 / 3;
-  grid-column: -1 / -2;
-}
-
-.filter-type {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;
-}
-
-.filter-type-price {
-  font-size: 16px;
-  line-height: 22px;
-  text-transform: uppercase;
-  background-color: var(--lightgrey);
-  display: flex;
-  width: 260px;
-  height: 38px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.filter-button {
-  font-size: 16px;
-  line-height: 18px;
-  color: var(--basic-black);
-  background-color: var(--lightgrey);
-}
-
-.filter-products-sort {
-  font-size: 14px;
-  line-height: 18px;
-  color: var(--basic-black);
-  text-transform: uppercase;
-}
-
-.button-big {
-  color: var(--blackbrown)
-}
-
-.button-small {
-  color: var(--darkgrey)
-}
 
 /*Range-cost*/
 
@@ -776,15 +714,104 @@ button {
   left: 160px;
 }
 
-/*Products*/
-
-.products-item {
-  grid-area: 3 / 2 / -2 / -1;
+.filter-type-price,
+.filter-type-grid,
+.filter-type-design,
+.filter-button {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
 }
 
-.products-pages-item {
-  grid-row: -1 / -2;
-  grid-column: 2 / -1;
+.filter-type-sort {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+}
+
+.products-group {
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}
+
+.filter-type {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
+.filter-type-price {
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color: var(--lightgrey);
+  display: flex;
+  width: 260px;
+  height: 38px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--lightgrey);
+}
+
+/*Products-group*/
+
+.filter-products-sort {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.filter-products-sort-group{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-products-sort-list {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-products-sort-item {
+  margin-left: 25px;
+  align-items: center;
+}
+
+/*Filter-products-sort-button*/
+
+.filter-products-sort-button {
+  margin-left: 47px;
+}
+
+.button-big {
+  color: var(--blackbrown)
+}
+
+.button-small {
+  color: var(--darkgrey)
+}
+
+/*Products*/
+
+.products {
+  grid-row: 3 / 4;
+  grid-column: 2 / 4;
 }
 
 .products-item-name {
