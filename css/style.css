@@ -540,6 +540,15 @@ button {
   bottom: 180px;
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.5s;
+}
+
+.modal-error {
+  animation: shake 0.5s;
+}
+
 .modal-letter {
   grid-area: 1 / 1 / 2 / 2;
   font-size: 45px;
@@ -627,6 +636,48 @@ button {
   width: 250px;
   height: 50px;
   margin-top: 47px;
+}
+
+/*Modal-Animation*/
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 /*Page-catalog*/
