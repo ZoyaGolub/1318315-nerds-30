@@ -546,7 +546,7 @@ button {
 }
 
 .modal-error {
-  animation: shake 0.5s;
+  animation: shake;
 }
 
 .modal-letter {
@@ -701,7 +701,14 @@ button {
   background-color: var(--lightgrey);
 }
   
-  /*Proposal*/
+/*Our-products*/
+
+.our-products {
+  width: 260px;
+  margin-right: 141px;
+  display: flex;
+  flex-direction: column;
+}
 
 .filter-type-cost {
   grid-row: 2 / 3;
@@ -789,9 +796,9 @@ button {
   grid-column: 2 / 3;
 }
 
-/*Products-group*/
+/*Our-products-filter*/
 
-.products-group {
+.our-products-filter {
   grid-row: 2 / 3;
   grid-column: 2 / 4;
 }
@@ -1002,8 +1009,8 @@ button {
   background-color: var(--blacklight);
   width: 362px;
   height: 582px;
-  background-position: center;*/
-}
+  background-position: center;
+}*/
 
 .products-item-name {
   font-size: 18px;
