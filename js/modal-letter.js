@@ -16,7 +16,7 @@ try {
     isStorageSupport = false;
 }
 
-footer-contacts-button.addEventListener("click", function (evt) {
+modalLetter.addEventListener("click", function (evt) {
     evt.preventDefault();
     modalPopup.classList.add("modal-show");
 
