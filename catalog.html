@@ -19,7 +19,7 @@
       href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   <header class="grey-bkg">
     <nav class="header-navigation container">
-      <a class="header-navigation-logo">
+      <a class="header-navigation-logo" href="index.html">
         <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Дизайн-студия электронных решений">
       </a>
       <ul class="site-navigation">
@@ -28,9 +28,9 @@
         <li class="site-navigation-item"><a href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a href="#">Контакты</a></li>
       </ul>
-      <div class="bucket">
+      <div class="bucket navigation-basket">
         <a class="site-navigation-basket" herf="#">
-          <img src="img/basket.png" width="15" height="15" alt="Корзина">
+          <img class="site-navigation-basket-img" src="img/basket.png" width="15" height="15" alt="Корзина">
         </a>
         <a class="site-navigation-basket" href="#">Корзина</a>
       </div>
@@ -43,7 +43,7 @@
         <section class="our-products">
           <h1 class="visually-hidden">Наши предложения</h1>
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter" method="get" action="#">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="filter-cost">
               <legend class="filter-type filter-type-cost">Стоимость:</legend>
               <div class="range-cost">
@@ -118,7 +118,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button filter-button" type="sublimit">Показать</button>
+            <button class="button filter-button" type="sublimit" href="https://echo.htmlacademy.ru/" formaction="https://echo.htmlacademy.ru/" formtarget="output">Показать</button>
           </form>
         </section>
         <section class="our-products-filter">
@@ -129,7 +129,7 @@
               <section class="filter-products-sort-group">
                 <ul class="filter-products-sort-list">
                   <li class="filter-products-sort-item filter-products-sort-price">
-                    <p>По цене</p>
+                    <a href="#">По цене</a>
                   </li>
                   <li class="filter-products-sort-item filter-products-sort-type">
                     <a href="#">По типу</a>
@@ -158,35 +158,122 @@
             <ul class="products-list">
               <li class="products-item">
                 <a href="#">
-                  <img src="img/sedona.jpg" width="359" height="578" alt="Sedons">
-                  <h3 class="products-item-name">Sedona</h3>
-                  <p class="products-item-info">Информационный сайт для туристов</p>
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap img-cap-sedona">
+                        <div class="circle-group">
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <img class="product-img" src="img/sedona.jpg" width="359" height="578" alt="Sedons">
+                    </section>
+                    <div class="card-info">
+                      <section class="product-info">
+                        <h3 class="products-item-name">Sedona</h3>
+                        <p class="products-item-info">Информационный&nbsp;сайт для&nbsp;туристов</p>
+                        <button class="button products-item-button" type="button" href="#">9 900 ₽</button>
+                      </section>
+                    </div>
+                  </section>
                 </a>
-                <button class="button products-item-button" type="button">9 900 ₽</button>
               </li>
               <li class="products-item">
-                <a href="#">
-                  <img src="img/pink.jpg" width="358" height="578" alt="Pink">
+                <a class="product-card product-card-others" href="#">
+                  <div class="img-cap">
+                    <div class="circle-group">
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                    </div>
+                  </div>
+                  <img class="product-img" src="img/pink.jpg" width="358" height="578" alt="Pink">
                 </a>
               </li>
               <li class="products-item">
-                <a href="#">
-                  <img src="img/barbershop.jpg" width="358" height="578" alt="Барбершоп БородинскиЙ">
+                <a class="product-card product-card-others" href="#">
+                  <div class="img-cap">
+                    <div class="circle-group">
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                    </div>
+                  </div>
+                  <img class="product-img" src="img/barbershop.jpg" width="358" height="578"
+                    alt="Барбершоп БородинскиЙ">
                 </a>
               </li>
               <li class="products-item">
-                <a href="#">
-                  <img src="img/mishka.jpg" width="359" height="578" alt="Mishka">
+                <a class="product-card product-card-others" href="#">
+                  <div class="img-cap">
+                    <div class="circle-group">
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                    </div>
+                  </div>
+                  <img class="product-img" src="img/mishka.jpg" width="359" height="578" alt="Mishka">
                 </a>
               </li>
               <li class="products-item">
-                <a href="#">
-                  <img src="img/aplus.jpg" width="359" height="578" alt="A-плюс">
+                <a class="product-card product-card-others" href="#">
+                  <div class="img-cap">
+                    <div class="circle-group">
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                    </div>
+                  </div>
+                  <img class="product-img" src="img/aplus.jpg" width="359" height="578" alt="A-плюс">
                 </a>
               </li>
               <li class="products-item">
-                <a href="#">
-                  <img src="img/kvast.jpg" width="359" height="578" alt="Кваст">
+                <a class="product-card product-card-others" href="#">
+                  <div class="img-cap">
+                    <div class="circle-group">
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                      <svg class="img-cap-circle">
+                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                      </svg>
+                    </div>
+                  </div>
+                  <img class="product-img" src="img/kvast.jpg" width="359" height="578" alt="Кваст">
                 </a>
               </li>
             </ul>
