@@ -59,6 +59,7 @@
   --lightgreygreenblue: #D7DCDF;
   --darkgreyred: #ABABAB;
   --greyred: #C4C4C4;
+  --darkgreylightblue: #B4B9BB;
 }
 
 /*Global*/
@@ -83,12 +84,6 @@ body {
 .grey-bkg {
   background-color: var(--lightgrey);
 }
-
-/*.map-bkg {
-  background-image: url(../img/map.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}*/
 
 a {
   text-decoration: none;
@@ -527,14 +522,15 @@ img {
 
 /*Footer*/
 
-.footer-contacts {
+.map-bkg {
   background-image: url(../img/map.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 1440px;
   height: 416px;
+}
+
+.footer-contacts {
   display: flex;
-  margin: 0 0 0 -140px;
   padding: 0px;
 }
 
@@ -660,9 +656,8 @@ img {
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   z-index: 1;
   position: fixed;
+  bottom: 1140px;
   left: 50%;
-  transform: translateX(-50%);
-  bottom: 180px;
 }
 
 .modal-wrp {
@@ -675,8 +670,8 @@ img {
 
 .modal-show {
   display: block;
-  animation: bounce 0.5s;
-  transform: translate(-50%, -50%);
+  animation: bounce 0.9s;
+  transform: translate(-50%, 100%);
 }
 
 .modal-error {
@@ -775,17 +770,17 @@ img {
 
 .modal-info-text:visited:focus {
   color: rgba(68,68,68,1);
-  border: solid #000000;
+  border-color: var(--basic-black);
 }
 
 .modal-info-text:hover {
   color: rgba(68,68,68,0.5);
-  border: solid #B4B9BB;
+  border-color: var(--darkgreylightblue);
 }
 
 .modal-info-text:invalid {
   color: rgba(231,66,70,1);
-  border: solid #E74246;
+  border-color: var(--red);
 }
 
 .modal-info-text-letter {
@@ -806,19 +801,19 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, 0%);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, 70%);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, 50%);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 100%);
   }
 }
 
