@@ -15,8 +15,6 @@
 
 <body class="page-body">
 
-  <p class="visually-hidden">Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a
-      href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
   <header class="grey-bkg">
     <nav class="header-navigation container">
       <a class="header-navigation-logo" href="index.html">
@@ -29,7 +27,7 @@
         <li class="site-navigation-item"><a class="site-navigation-item-page" href="#">Контакты</a></li>
       </ul>
       <div class="bucket navigation-basket">
-        <a class="site-navigation-basket" herf="#">
+        <a class="site-navigation-basket">
           <img class="site-navigation-basket-img" src="img/basket.png" width="15" height="15" alt="Корзина">
         </a>
         <a class="site-navigation-basket" href="#">Корзина</a>
@@ -43,7 +41,7 @@
         <section class="our-products">
           <h1 class="visually-hidden">Наши предложения</h1>
           <h2 class="visually-hidden">Фильтр товаров</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru/">
+          <form class="filter" id="products-filter" method="get" action="https://echo.htmlacademy.ru/" target="products-filter">
             <fieldset class="filter-cost">
               <legend class="filter-type filter-type-cost">Стоимость:</legend>
               <div class="range-cost">
@@ -73,18 +71,15 @@
               <legend class="filter-type">Сетка:</legend>
               <ul>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="layout"
-                    id="filter-adaptive" checked>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter" value="Адаптивная" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="layout"
-                    id="filter-fixed">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter" value="Фиксированная" id="filter-fixed">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" value="layout"
-                    id="filter-rubber">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter" value="Резиновая" id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -93,32 +88,28 @@
               <legend class="filter-type">Особенности:</legend>
               <ul>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" id="filter-slider"
-                    checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" form="products-filter" id="filter-slider" value="Слайдер" checked>
                   <label for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design"
-                    id="filter-advantages">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" form="products-filter" id="filter-advantages" value="Блок преимуществ">
                   <label for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" id="filter-news"
-                    checked>
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" form="products-filter" id="filter-news" value="Новости" checked>
                   <label for="filter-news">Новости</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design"
-                    id="filter-gallery">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" form="products-filter" id="filter-gallery" value="Галерея">
                   <label for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" id="filter-basket">
+                  <input class="visually-hidden filter-input-checkbox" type="checkbox" name="design" form="products-filter" id="filter-basket" value="Корзина">
                   <label for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
-            <button class="button filter-button" type="sublimit" href="https://echo.htmlacademy.ru/" formaction="https://echo.htmlacademy.ru/" formtarget="output">Показать</button>
+            <button class="button filter-button" type="submit">Показать</button>
           </form>
         </section>
         <section class="our-products-filter">
@@ -129,13 +120,13 @@
               <section class="filter-products-sort-group">
                 <ul class="filter-products-sort-list">
                   <li class="filter-products-sort-item filter-products-sort-price">
-                    <a href="#">По цене</a>
+                    <p>По цене</p>
                   </li>
                   <li class="filter-products-sort-item filter-products-sort-type">
-                    <a href="#">По типу</a>
+                    <p>По типу</p>
                   </li>
                   <li class="filter-products-sort-item filter-products-sort-name">
-                    <a href="#">По названию</a>
+                    <p>По названию</p>
                   </li>
                 </ul>
                 <section class="filter-products-sort-button">
@@ -157,9 +148,9 @@
             <h2 class="products visually-hidden">Продукты</h2>
             <ul class="products-list">
               <li class="products-item">
-                <a href="#">
-                  <section class="card-img">
-                    <section class="product-card">
+                <div class="product-card-sedona">
+                  <section class="card-img-sedona">
+                    <section class="product-card product-card-sedoma">
                       <div class="img-cap img-cap-sedona">
                         <div class="circle-group">
                           <svg class="img-cap-circle">
@@ -179,11 +170,11 @@
                       <section class="product-info">
                         <h3 class="products-item-name">Sedona</h3>
                         <p class="products-item-info">Информационный&nbsp;сайт для&nbsp;туристов</p>
-                        <button class="button products-item-button" type="button" href="#">9 900 ₽</button>
+                        <button class="button products-item-button" type="button">9 900 ₽</button>
                       </section>
                     </div>
                   </section>
-                </a>
+                </div>
               </li>
               <li class="products-item">
                 <a class="product-card product-card-others" href="#">
@@ -339,7 +330,7 @@
       <section class="footer-bonus">
         <h3 class="visually-hidden">Бонусы</h3>
         <p class="footer-post">Давайте дружить, это выгодно!</p>
-        <p class="footer-discount" href="#">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
       </section>
     </section>
   </footer>
