@@ -671,8 +671,9 @@ img {
 
 .footer-social-button:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: var(--reddark);
+  background: linear-gradient(0deg, var(--reddark), var(--reddark)), var(--basic-white);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  opacity: 100%;
 }
 
 .footer-bonus {
@@ -1116,19 +1117,19 @@ img {
 }
 
 .filter-input-radio+label::before:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio+label::before:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio:checked+label::before:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio:checked+label::before:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio+label::before:disabled {
@@ -1148,23 +1149,23 @@ img {
   height: 11px;
   background-color: var(--blacklight);
   border-radius: 50%;
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio+label::after:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio+label::after:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio:checked+label::after:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio:checked+label::after:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-radio+label::after:disabled {
@@ -1190,19 +1191,19 @@ img {
 }
 
 .filter-input-checkbox+label::before:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox+label::before:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox:checked+label::before:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox:checked+label::before:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox+label::before:disabled {
@@ -1226,19 +1227,19 @@ img {
 }
 
 .filter-input-checkbox+label::after:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox+label::after:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox:checked+label::after:focus {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox:checked+label::after:hover {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-input-checkbox+label::after:disabled {
@@ -1313,7 +1314,7 @@ img {
 }
 
 .filter-products-sort-price {
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-products-sort-item:visited {
@@ -1353,7 +1354,7 @@ img {
 
 .button-big {
   color: var(--blackbrown);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .button-small {
@@ -1362,23 +1363,23 @@ img {
 
 .filter-products-button:visited {
   color: var(--blackbrown);
-  opacity: 99%;
+  opacity: 100%;
   border: transparent;
 }
 
 .filter-products-button:focus {
   color: var(--darkgrey);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-products-button:hover {
   color: var(--darkgrey);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .filter-products-button:active {
   color: var(--blackbrown);
-  opacity: 99%;
+  opacity: 100%;
   border: transparent;
 }
 
@@ -1449,7 +1450,7 @@ img {
   z-index: 1;
   margin: 0px;
   color: var(--basic-white);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .product-img {
@@ -1512,7 +1513,7 @@ img {
 
 .products-item-button:active {
   color: rgba(255, 255, 255, 1);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .card-img {
@@ -1543,23 +1544,23 @@ img {
 
 .card-img:focus .img-cap {
   background-color: rgba(77, 77, 77, 1);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .card-img-sedona:hover .img-cap {
   background-color: rgba(77, 77, 77, 1);
-  opacity: 99%;
+  opacity: 100%;
 }
 
 .product-card:focus .img-cap {
   background-color: rgba(77, 77, 77, 1);
-  opacity: 99%;
+  opacity: 100%;
   filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
 }
 
 .product-card:hover .img-cap {
   background-color: rgba(77, 77, 77, 1);
-  opacity: 99%;
+  opacity: 100%;
   filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.25));
 }
 
