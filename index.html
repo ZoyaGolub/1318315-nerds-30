@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="fonts/roboto.woff2">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-minify.css">
 </head>
 
 <body class="page-body">
@@ -26,7 +26,7 @@
         <li class="site-navigation-item"><a class="site-navigation-item-page" href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a class="site-navigation-item-page" href="#">Контакты</a></li>
       </ul>
-      <div class="bucket navigation-basket">
+      <div class="backet navigation-basket">
         <a class="site-navigation-basket">
           <img class="site-navigation-basket-img" src="img/basket.png" width="15" height="15" alt="Корзина">
         </a>
@@ -43,36 +43,35 @@
             <div class="slider-item">
               <section class="proposal-text">
                 <p class="proposal-credo">Долго, дорого, скрупулезно.</p>
-                <p class="proposal-info">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного
-                  приложения.</p>
-                <button class="button proposal-button">Узнать больше</button>
+                <p class="proposal-info">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
+                <button class="button proposal-button" type="button" href="#" aria-label="Перейти на страницу текущего слайда">Узнать больше</button>
               </section>
               <section class="slide-img">
-                <img class="proposal-foto" src="img/phone_slide.png" width="760" height="431" alt="Cлайдер - Приложения для телефонов">
+                <img class="proposal-foto" src="img/slide_one_phone.png" width="760" height="431" alt="Cлай первый - Приложения для телефонов">
               </section>
             </div>
           </li>
           <li class="slide">
             <div class="slider-item">
               <section class="proposal-text">
-                <p class="proposal-credo"></p>
-                <p></p>
-                <a class="button" href="#"></a>
+                <p class="proposal-credo">Любим математику как&nbsp;никто&nbsp;другой</p>
+                <p class="proposal-info">Никакого креатива, только математические формулы для&nbsp;расчета идеальных пропорций.</p>
+                <button class="button proposal-button" type="button" href="#" aria-label="Перейти на страницу текущего слайда">Узнать больше</button>
               </section>
               <section class="slide-img">
-                <img class="proposal-foto" src="#" width="760" height="431" alt="Слайдер - Cлайд второй">
+                <img class="proposal-foto" src="img/slide_two_comp.png" width="760" height="431" alt="Слайд второй - Математический расчет для приложений">
               </section>
             </div>
           </li>
           <li class="slide">
             <div class="slider-item">
               <section class="proposal-text">
-                <p class="proposal-credo"></p>
-                <p></p>
-                <a class="button" href="#"></a>
+                <p class="proposal-credo">Только&nbsp;ночь, только&nbsp;хардкор</p>
+                <p class="proposal-info">Работать днем, как все? Мы&nbsp;против&nbsp;этого. Ближе&nbsp;к&nbsp;полуночи работа только начинается.</p>
+                <button class="button proposal-button" type="button" href="#" aria-label="Перейти на страницу текущего слайда">Узнать больше</button>
               </section>
               <section class="slide-img">
-                <img class="proposal-foto" src="#" width="760" height="431" alt="Слайдер - Слайд третий">
+                <img class="proposal-foto" src="img/slide_three_gadget.png" width="760" height="431" alt="Слайд третий - Круглосуточная поддержка приложений">
               </section>
             </div>
           </li>
@@ -92,19 +91,19 @@
           <h3 class="products-group-item-name">Веб-сайты</h3>
           <img class="products-group-item-img" src="img/web_site.jpg" width="300" height="146" alt="Веб-сайты">
           <p class="products-group-item-info">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <button class="button button-group button-web-site">Заказать</button>
+          <button class="button button-group button-web-site" type="button" aria-label="Перейти на страницу заказа">Заказать</button>
         </li>
         <li class="products-group-item">
           <h3 class="products-group-item-name">Приложения</h3>
           <img class="products-group-item-img" src="img/appications.jpg" width="300" height="146" alt="Приложжения">
           <p class="products-group-item-info">Покорите топ-10 приложений в&nbsp;AppStore и Google Play</p>
-          <button class="button button-group button-applications">Заказать</button>
+          <button class="button button-group button-applications" type="button" aria-label="Перейти на страницу заказа">Заказать</button>
         </li>
         <li class="products-group-item">
           <h3 class="products-group-item-name">Презентации</h3>
           <img class="products-group-item-img" src="img/presentations.jpg" width="300" height="146" alt="Презентации">
           <p class="products-group-item-info">Вы даже не подозреваете, насколько вы изумительны!</p>
-          <button class="button button-group button-presentations">Заказать</button>
+          <button class="button button-group button-presentations" type="button" aria-label="Перейти на страницу заказа">Заказать</button>
         </li>
       </ul>
     </section>
@@ -112,8 +111,7 @@
       <h2 class="visually-hidden">О нас</h2>
       <div class="about-info">
         <p class="about-us">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
-        <p class="about-basics">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше
-          креатива. Работаем не покладая рук, как роботы.</p>
+        <p class="about-basics">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
         <p class="about-us-do">Выполняем заказы на разработку:</p>
         <ul class="order-list">
           <li class="order-item">
@@ -128,7 +126,8 @@
         </ul>
       </div>
       <div class="statistic">
-        <img class="statistic-about about-logo" src="img/nerds_illustration.png" width="360" height="208" alt="Логотип - Статистика в работе">
+        <img class="statistic-about about-logo" src="img/nerds_illustration.png" width="360" height="208"
+          alt="Логотип - Статистика в работе">
         <p class="about-us-work">с 2004 года Любим точность во всем:</p>
         <dl class="about-table">
           <dt class="about-table-efficiency">146<span class="sup">%</span></dt>
@@ -168,18 +167,22 @@
   </main>
   <footer class="footer">
     <div class="map-bkg">
-      <section class="footer-contacts container">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="footer-map">
-          <p class="footer-contacts-name">Nerds design studio</p>
-          <p class="footer-contacts-info">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8,</p>
-          <a class="footer-contacts-info" href="tel:+7812275575">тел. +7 (812) 275-75-75</a>
-          <button class="button footer-contacts-button" type="submit">Напишите нам</button>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden container">Контактная информация</h2>
+        <div class="footer-contacts-map container">
+          <div class="footer-map container">
+            <p class="footer-contacts-name">Nerds design studio</p>
+            <p class="footer-contacts-info">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8,</p>
+            <a class="footer-contacts-info" href="tel:+78122757575"
+              aria-label="Номер телефона дизайн-студии Нёрдс +78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="footer-contacts-button" href="popup.html">
+              <p class="button button-popup" aria-label="Переход на страницу обратной связи">Напишите нам</p>
+            </a>
+          </div>
+          <img class="visually-hidden" src="img/map.jpg" width="1440" height="416" alt="Карта Санкт-Петербурга">
+          <img class="footer-contacts-map-marker" src="img/map_marker.png" width="231" height="190" alt="Локация улица Большая Конюшенная, д.19/8">
         </div>
-        <a href="#">
-          <img class="visually-hidden footer-contacts-map" src="img/map.jpg" width="1440" height="416" alt="Карта Санкт-Петербурга">
-          <img class="footer-contacts-map-marker" src="img/map_marker.png" width="231" height="190" alt="Локация ул. Б. Конюшенная, д.19/8">
-        </a>
+        <iframe class="footer-contacts-map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1615991844580!5m2!1sen!2sua" width="1440" height="416" style="border:0;" allowfullscreen="Офис компании HTML Академии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" loading="lazy"></iframe>
       </section>
     </div>
     <section class="footer-social container">
@@ -187,30 +190,27 @@
         <h3 class="visually-hidden">Соц.сети</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="visually-hidden" href="#">Вконтакте</a>
-            <a class="footer-social-button" href="#">
+            <a class="visually-hidden" href="#" aria-label="Переход на страницу социальной сети Вконтакте">Вконтакте</a>
+            <a class="footer-social-button" href="#" aria-label="Переход на страницу социальной сети Вконтакте">
               <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
-                  fill="white" />
+                <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white" />
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="visually-hidden" href="#">Фейсбук</a>
-            <a class="footer-social-button" href="#">
+            <a class="visually-hidden" href="#" aria-label="Переход на страницу социальной сети Фейсбук">Фейсбук</a>
+            <a class="footer-social-button" href="#" aria-label="Переход на страницу социальной сети Фейсбук">
               <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="visually-hidden" href="#">Инстаграмм</a>
-            <a class="footer-social-button" href="#">
+            <a class="visually-hidden" href="#"
+              aria-label="Переход на страницу социальной сети Инстаграмм">Инстаграмм</a>
+            <a class="footer-social-button" href="#" aria-label="Переход на страницу социальной сети Инстаграмм">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
-                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white" />
               </svg>
             </a>
           </li>
@@ -228,32 +228,27 @@
       <h3 class="modal-letter">Напишите нам</h3>
       <button class="modal-close" type="button">
         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M13.3391 10.5088L20.7163 3.13165C21.1056 2.74233 21.1056 2.1058 20.7163 1.71647L19.3011 0.300294C18.9118 -0.0890303 18.2752 -0.0890303 17.8859 0.300294L10.5088 7.67844L3.13163 0.301295C2.7423 -0.0880295 2.10577 -0.0880295 1.71645 0.301295L0.301271 1.71647C-0.0880537 2.1058 -0.0880537 2.74233 0.301271 3.13165L7.67842 10.5088L0.301271 17.8859C-0.0880537 18.2753 -0.0880537 18.9118 0.301271 19.3011L1.71745 20.7163C2.10678 21.1056 2.74331 21.1056 3.13263 20.7163L10.5098 13.3392L17.8869 20.7163C18.2762 21.1056 18.9128 21.1056 19.3021 20.7163L20.7173 19.3011C21.1066 18.9118 21.1066 18.2753 20.7173 17.8859L13.3391 10.5088Z"
-            fill="#FB565A" />
+          <path d="M13.3391 10.5088L20.7163 3.13165C21.1056 2.74233 21.1056 2.1058 20.7163 1.71647L19.3011 0.300294C18.9118 -0.0890303 18.2752 -0.0890303 17.8859 0.300294L10.5088 7.67844L3.13163 0.301295C2.7423 -0.0880295 2.10577 -0.0880295 1.71645 0.301295L0.301271 1.71647C-0.0880537 2.1058 -0.0880537 2.74233 0.301271 3.13165L7.67842 10.5088L0.301271 17.8859C-0.0880537 18.2753 -0.0880537 18.9118 0.301271 19.3011L1.71745 20.7163C2.10678 21.1056 2.74331 21.1056 3.13263 20.7163L10.5098 13.3392L17.8869 20.7163C18.2762 21.1056 18.9128 21.1056 19.3021 20.7163L20.7173 19.3011C21.1066 18.9118 21.1066 18.2753 20.7173 17.8859L13.3391 10.5088Z" fill="#FB565A" />
         </svg>
       </button>
       <form class="modal-info" action="https://echo.htmlacademy.ru/" method="post">
         <p class="modal-name">
           <label class="modal-info-name" for="modal-info-name">Ваше имя:</label>
-          <input class="modal-info-text modal-info-text-name" id="modal-info-name" type="text" name="name"
-            placeholder="Имя Фамилия">
+          <input class="modal-info-text modal-info-text-name" id="modal-info-name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
         <p class="modal-email">
           <label class="modal-info-name" for="modal-info-email">Ваш email:</label>
-          <input class="modal-info-text modal-info-text-email" id="modal-info-email" type="email" name="email"
-            placeholder="email@example.com">
+          <input class="modal-info-text modal-info-text-email" id="modal-info-email" type="email" name="email" placeholder="email@example.com">
         </p>
         <p class="modal-text">
           <label class="modal-info-name" for="modal-info-text">Текст письма:</label>
-          <textarea class="modal-info-text modal-info-text-letter" id="modal-info-text" name="text"
-            placeholder="В свободной форме"></textarea>
+          <textarea class="modal-info-text modal-info-text-letter" id="modal-info-text" name="text" placeholder="В свободной форме"></textarea>
         </p>
-        <button class="button modal-button" type="submit">Отправить</button>
+        <button class="button modal-button" type="submit" href="#" aria-label="Отправить письмо дизайн-студии Нёрдс">Отправить</button>
       </form>
     </div>
   </section>
-  <script src="js/modal-letter.js"></script>
+  <script src="js/modal-letter-minify.js"></script>
 </body>
 
 </html>

@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="stylesheet" href="fonts/roboto.woff2">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-minify.css">
 </head>
 
 <body class="page-body">
@@ -26,11 +26,11 @@
         <li class="site-navigation-item"><a class="site-navigation-item-page site-navigation-item-catalog" href="catalog.html">Магазин</a></li>
         <li class="site-navigation-item"><a class="site-navigation-item-page" href="#">Контакты</a></li>
       </ul>
-      <div class="bucket navigation-basket">
+      <div class="backet navigation-basket">
         <a class="site-navigation-basket">
           <img class="site-navigation-basket-img" src="img/basket.png" width="15" height="15" alt="Корзина">
         </a>
-        <a class="site-navigation-basket" href="#">Корзина</a>
+        <a class="site-navigation-basket site-navigation-item-page" href="#">Корзина</a>
       </div>
     </nav>
   </header>
@@ -60,10 +60,10 @@
                     "></div>
                 </div>
                 <div class="filter-type filter-type-price">
-                  <label class="filter-type-price-min" for="price-min">От<input type="text" id="price-min"
-                      name="filter-type-price-min" value="0"></label>
-                  <label class="filter-type-price-max" for="price-max">До<input type="text" id="price-max"
-                      name="filter-type-price-max" value="15000"></label>
+                  <label class="filter-type-price-min" for="price-min" aria-label="Минимальная стоимость">От<input
+                      type="text" id="price-min" name="filter-type-price-min" value="0"></label>
+                  <label class="filter-type-price-max" for="price-max" aria-label="Максимальная стоимость">До<input
+                      type="text" id="price-max" name="filter-type-price-max" value="15000"></label>
                 </div>
               </div>
             </fieldset>
@@ -71,15 +71,18 @@
               <legend class="filter-type">Сетка:</legend>
               <ul>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter" value="Адаптивная" id="filter-adaptive" checked>
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter"
+                    value="Адаптивная" id="filter-adaptive" checked>
                   <label for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter" value="Фиксированная" id="filter-fixed">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter"
+                    value="Фиксированная" id="filter-fixed">
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-type-item">
-                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter" value="Резиновая" id="filter-rubber">
+                  <input class="visually-hidden filter-input-radio" type="radio" name="grid" form="products-filter"
+                    value="Резиновая" id="filter-rubber">
                   <label for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
@@ -109,7 +112,7 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button filter-button" type="submit">Показать</button>
+            <button class="button filter-button" type="submit" href="#"  aria-label="Применить выбранные параметры фильтра и показать продукты">Показать</button>
           </form>
         </section>
         <section class="our-products-filter">
@@ -119,23 +122,23 @@
               <p class="filter-type filter-type-sort">Сортировать:</p>
               <section class="filter-products-sort-group">
                 <ul class="filter-products-sort-list">
-                  <li class="filter-products-sort-item filter-products-sort-price">
+                  <li class="filter-products-sort-item filter-products-sort-price" aria-label="Отсортировать продукты по цене">
                     <p>По цене</p>
                   </li>
-                  <li class="filter-products-sort-item filter-products-sort-type">
+                  <li class="filter-products-sort-item filter-products-sort-type" aria-label="Отсортировать продукты по типу">
                     <p>По типу</p>
                   </li>
-                  <li class="filter-products-sort-item filter-products-sort-name">
+                  <li class="filter-products-sort-item filter-products-sort-name" aria-label="Отсортировать продукты по названию">
                     <p>По названию</p>
                   </li>
                 </ul>
                 <section class="filter-products-sort-button">
-                  <button class="filter-products-button button-big" type="button">
+                  <button class="filter-products-button button-big" type="button" aria-label="Сортировать от большего к меньшему">
                     <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.5 10L0 0H11" fill="#231F20" />
                     </svg>
                   </button>
-                  <button class="filter-products-button button-small" type="button">
+                  <button class="filter-products-button button-small" type="button" aria-label="Сортировать от меньшего к большему">
                     <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6" />
                     </svg>
@@ -148,10 +151,10 @@
             <h2 class="products visually-hidden">Продукты</h2>
             <ul class="products-list">
               <li class="products-item">
-                <div class="product-card-sedona">
-                  <section class="card-img-sedona">
-                    <section class="product-card product-card-sedoma">
-                      <div class="img-cap img-cap-sedona">
+                <div class="product-card">
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap">
                         <div class="circle-group">
                           <svg class="img-cap-circle">
                             <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
@@ -164,11 +167,13 @@
                           </svg>
                         </div>
                       </div>
-                      <img class="product-img" src="img/sedona.jpg" width="359" height="578" alt="Сайт компании Sedona">
+                      <img class="product-img" src="img/sedona.jpg" width="359" height="578" alt="Сайт туристической компании Sedona">
                     </section>
                     <div class="card-info">
                       <section class="product-info">
-                        <h3 class="products-item-name">Sedona</h3>
+                        <a href="#">
+                          <h3 class="products-item-name">Sedona</h3>
+                        </a>
                         <p class="products-item-info">Информационный&nbsp;сайт для&nbsp;туристов</p>
                         <button class="button products-item-button" type="button">9 900 ₽</button>
                       </section>
@@ -177,101 +182,166 @@
                 </div>
               </li>
               <li class="products-item">
-                <a class="product-card product-card-others" href="#">
-                  <div class="img-cap">
-                    <div class="circle-group">
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
+                <div class="product-card product-card-others">
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap">
+                        <div class="circle-group">
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <img class="product-img" src="img/pink.jpg" width="358" height="578" alt="Сайт компании Pink - приложения для iOS и Android">
+                    </section>
+                    <div class="card-info">
+                      <section class="product-info">
+                        <a href="#">
+                          <h3 class="products-item-name">Pink App</h3>
+                        </a>
+                        <p class="products-item-info">Продуктовый лендинг приложения для&nbsp;iOS&nbsp;и&nbsp;Android</p>
+                        <button class="button products-item-button" type="button">9 900 ₽</button>
+                      </section>
                     </div>
-                  </div>
-                  <img class="product-img" src="img/pink.jpg" width="358" height="578" alt="Сайт компании Pink">
-                </a>
+                  </section>
+                </div>
               </li>
               <li class="products-item">
-                <a class="product-card product-card-others" href="#">
-                  <div class="img-cap">
-                    <div class="circle-group">
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
+                <div class="product-card product-card-others">
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap">
+                        <div class="circle-group">
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <img class="product-img" src="img/barbershop.jpg" width="358" height="578" alt="Сайт салона красоты для мужчин Барбершоп БородинскиЙ">
+                    </section>
+                    <div class="card-info">
+                      <section class="product-info">
+                        <a href="#">
+                          <h3 class="products-item-name">Barbershop</h3>
+                        </a>
+                        <p class="products-item-info">Сайт салона красоты. Для&nbsp;мужчин,&nbsp;да.</p>
+                        <button class="button products-item-button" type="button">9 900 ₽</button>
+                      </section>
                     </div>
-                  </div>
-                  <img class="product-img" src="img/barbershop.jpg" width="358" height="578" alt="Сайт магазина Барбершоп БородинскиЙ">
-                </a>
+                  </section>
+                </div>
               </li>
               <li class="products-item">
-                <a class="product-card product-card-others" href="#">
-                  <div class="img-cap">
-                    <div class="circle-group">
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
+                <div class="product-card product-card-others">
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap">
+                        <div class="circle-group">
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <img class="product-img" src="img/mishka.jpg" width="359" height="578" alt="Сайт интернет-магазина вязанных игрушек Mishka">
+                    </section>
+                    <div class="card-info">
+                      <section class="product-info">
+                        <a href="#">
+                          <h3 class="products-item-name">Mishka</h3>
+                        </a>
+                        <p class="products-item-info">Интернет-магазин вязаных&nbsp;игрушек</p>
+                        <button class="button products-item-button" type="button">9 900 ₽</button>
+                      </section>
                     </div>
-                  </div>
-                  <img class="product-img" src="img/mishka.jpg" width="359" height="578" alt="Сайт магазина Mishka">
-                </a>
+                  </section>
+                </div>
               </li>
               <li class="products-item">
-                <a class="product-card product-card-others" href="#">
-                  <div class="img-cap">
-                    <div class="circle-group">
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
+                <div class="product-card product-card-others">
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap">
+                        <div class="circle-group">
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <img class="product-img" src="img/aplus.jpg" width="359" height="578" alt="Сайт курсов повышения квалификации компании A-плюс">
+                    </section>
+                    <div class="card-info">
+                      <section class="product-info">
+                        <a href="#">
+                          <h3 class="products-item-name">A Plus</h3>
+                        </a>
+                        <p class="products-item-info">Лендинг курсов повышения квалификации</p>
+                        <button class="button products-item-button" type="button">9 900 ₽</button>
+                      </section>
                     </div>
-                  </div>
-                  <img class="product-img" src="img/aplus.jpg" width="359" height="578" alt="Сайт компании A-плюс">
-                </a>
+                  </section>
+                </div>
               </li>
               <li class="products-item">
-                <a class="product-card product-card-others" href="#">
-                  <div class="img-cap">
-                    <div class="circle-group">
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
-                      <svg class="img-cap-circle">
-                        <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
-                      </svg>
+                <div class="product-card product-card-others">
+                  <section class="card-img">
+                    <section class="product-card">
+                      <div class="img-cap">
+                        <div class="circle-group">
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                          <svg class="img-cap-circle">
+                            <circle r="7" cx="50%" cy="13%" fill="#FFFFFF" />
+                          </svg>
+                        </div>
+                      </div>
+                      <img class="product-img" src="img/kvast.jpg" width="359" height="578" alt="Сайт производителя кваса Кваст">
+                    </section>
+                    <div class="card-info">
+                      <section class="product-info">
+                        <a href="#">
+                          <h3 class="products-item-name">Кваст</h3>
+                        </a>
+                        <p class="products-item-info">Промо-сайт производителя крафтового кваса</p>
+                        <button class="button products-item-button" type="button">9 900 ₽</button>
+                      </section>
                     </div>
-                  </div>
-                  <img class="product-img" src="img/kvast.jpg" width="359" height="578" alt="Сайт магазина Кваст">
-                </a>
+                  </section>
+                </div>
               </li>
             </ul>
             <section class="products-pages-button">
-              <button class="pages-button button page-button-one" type="button">1</button>
-              <button class="pages-button button page-button-two" type="button">2</button>
-              <button class="pages-button button page-button-three" type="button">3</button>
-              <button class="pages-button button page-button-next" type="button">Следующая</button>
+              <button class="pages-button button page-button-one" type="button" aria-label="Первая страница продуктов">1</button>
+              <button class="pages-button button page-button-two" type="button" aria-label="Вторая страница продуктов">2</button>
+              <button class="pages-button button page-button-three" type="button" aria-label="Третья страница продуктов">3</button>
+              <button class="pages-button button page-button-next" type="button" aria-label="Следующая страница продуктов">Следующая</button>
             </section>
           </section>
         </section>
@@ -280,18 +350,22 @@
   </main>
   <footer class="footer">
     <div class="map-bkg">
-      <section class="footer-contacts container">
-        <h2 class="visually-hidden">Контактная информация</h2>
-        <div class="footer-map">
-          <p class="footer-contacts-name">Nerds design studio</p>
-          <p class="footer-contacts-info">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8,</p>
-          <a class="footer-contacts-info" href="tel:+7812275575">тел. +7 (812) 275-75-75</a>
-          <button class="button footer-contacts-button" type="submit">Напишите нам</button>
+      <section class="footer-contacts">
+        <h2 class="visually-hidden container">Контактная информация</h2>
+        <div class="footer-contacts-map container">
+          <div class="footer-map container">
+            <p class="footer-contacts-name">Nerds design studio</p>
+            <p class="footer-contacts-info">191186, Санкт-Петербург, ул.&nbsp;Б.&nbsp;Конюшенная, д.&nbsp;19/8,</p>
+            <a class="footer-contacts-info" href="tel:+78122757575"
+              aria-label="Номер телефона дизайн-студии Нёрдс +78122757575">тел. +7 (812) 275-75-75</a>
+            <a class="footer-contacts-button" href="popup.html">
+              <p class="button button-popup" aria-label="Переход на страницу обратной связи">Напишите нам</p>
+            </a>
+          </div>
+          <img class="visually-hidden" src="img/map.jpg" width="1440" height="416" alt="Карта Санкт-Петербурга">
+          <img class="footer-contacts-map-marker" src="img/map_marker.png" width="231" height="190" alt="Локация улица Большая Конюшенная, д.19/8">
         </div>
-        <a href="#">
-          <img class="visually-hidden footer-contacts-map" src="img/map.jpg" width="1440" height="416" alt="Карта Санкт-Петербурга">
-          <img class="footer-contacts-map-marker" src="img/map_marker.png" width="231" height="190" alt="Локация ул. Б. Конюшенная, д.19/8">
-        </a>
+        <iframe class="footer-contacts-map-online" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533273!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sua!4v1615991844580!5m2!1sen!2sua" width="1440" height="416" style="border:0;" allowfullscreen="Офис компании HTML Академии по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" loading="lazy"></iframe>
       </section>
     </div>
     <section class="footer-social container">
@@ -299,30 +373,27 @@
         <h3 class="visually-hidden">Соц.сети</h3>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="visually-hidden" href="#">Вконтакте</a>
-            <a class="footer-social-button" href="#">
+            <a class="visually-hidden" href="#" aria-label="Переход на страницу социальной сети Вконтакте">Вконтакте</a>
+            <a class="footer-social-button" href="#" aria-label="Переход на страницу социальной сети Вконтакте">
               <svg width="27" height="15" viewBox="0 0 27 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z"
-                  fill="white" />
+                <path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white" />
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="visually-hidden" href="#">Фейсбук</a>
-            <a class="footer-social-button" href="#">
+            <a class="visually-hidden" href="#" aria-label="Переход на страницу социальной сети Фейсбук">Фейсбук</a>
+            <a class="footer-social-button" href="#" aria-label="Переход на страницу социальной сети Фейсбук">
               <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
               </svg>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="visually-hidden" href="#">Инстаграмм</a>
-            <a class="footer-social-button" href="#">
+            <a class="visually-hidden" href="#"
+              aria-label="Переход на страницу социальной сети Инстаграмм">Инстаграмм</a>
+            <a class="footer-social-button" href="#" aria-label="Переход на страницу социальной сети Инстаграмм">
               <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
-                  fill="white" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white" />
               </svg>
             </a>
           </li>
@@ -335,6 +406,7 @@
       </section>
     </section>
   </footer>
+  <script src="js/modal-letter-minify.js"></script>
 </body>
 
 </html>
